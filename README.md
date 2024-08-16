@@ -50,8 +50,8 @@ The **speedkart** is an innovative video streaming platform designed to streamli
 
    4. **Clone the Project Repository:**
       ```bash
-      git clone https://github.com/yourusername/smart-checkout-cart.git
-      cd smart-checkout-cart
+      git clone https://github.com/jahnvisahni31/SpeedKart.git
+      cd SpeedKart
       ```
 
    5. **Configure YOLO:**
