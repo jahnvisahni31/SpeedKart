@@ -91,7 +91,6 @@ The **speedkart** is an innovative video streaming platform designed to streamli
 **contributors**
 - **Sahil Jain**
 - **Gunesh Gupta**
-- **Yash Gupta**
 - **Girendra Sinsinwar**
 - **Jahnvi Sahni**
 
