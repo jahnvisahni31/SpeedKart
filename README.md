@@ -4,7 +4,7 @@
 
 The **speedkart** is an innovative video streaming platform designed to streamline the checkout process in retail environments. By integrating YOLO (You Only Look Once) for real-time object detection and a Raspberry Pi for processing, this solution allows customers to automatically scan and bill items directly at the cart. The system generates a receipt and a QR code for easy checkout, enhancing the shopping experience.
 
-if you have to checkout the exact idea you can see this : (link)[https://youtu.be/HfM_Fcq_sw4?si=inhpKN-fPYtxFo0a]
+if you have to checkout the exact idea you can see this : [link](https://youtu.be/HfM_Fcq_sw4?si=inhpKN-fPYtxFo0a)
 
 ## Key Features
 
