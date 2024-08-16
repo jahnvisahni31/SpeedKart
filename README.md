@@ -88,7 +88,7 @@ The **speedkart** is an innovative video streaming platform designed to streamli
 
 ## Contributing
 
-Contributions are welcome! If you have ideas for improvements or bug fixes, please submit a pull request or open an issue on the [GitHub repository](https://github.com/yourusername/smart-checkout-cart).
+Contributions are welcome! If you have ideas for improvements or bug fixes, please submit a pull request or open an issue on the [GitHub repository](https://github.com/jahnvisahni31/SpeedKart).
 
 ## License
 
@@ -98,6 +98,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 For any questions or further information, please contact:
 
-- [Your Name](mailto:your.email@example.com)
-- [GitHub Profile](https://github.com/yourusername)
 
