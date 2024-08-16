@@ -1,55 +1,103 @@
-# SpeedKart
+# Walmart Sparkathon: speedkart
 
 ## Project Overview
 
-SpeedKart is an innovative solution developed for the Walmart Sparkathon that revolutionizes the in-store shopping experience. By integrating a video streaming platform with YOLO object detection and Raspberry Pi, we've created a system that automatically bills items as they're placed in the shopping cart, enabling a seamless self-checkout process.
+The **speedkart** is an innovative video streaming platform designed to streamline the checkout process in retail environments. By integrating YOLO (You Only Look Once) for real-time object detection and a Raspberry Pi for processing, this solution allows customers to automatically scan and bill items directly at the cart. The system generates a receipt and a QR code for easy checkout, enhancing the shopping experience.
 
 ## Key Features
 
-- **Real-time Item Detection:** Uses YOLO (You Only Look Once) algorithm to detect and identify items as they're added to the cart.
-- **Automated Billing:** Keeps a running total of items in the cart, updating in real-time.
-- **Self-Checkout:** Allows customers to complete their purchase directly at the cart.
-- **Digital Receipt:** Generates a digital receipt for the transaction.
-- **QR Code Generation:** Creates a QR code for easy digital payment or record-keeping.
+- **Automatic Item Detection:** Utilizes YOLO for accurate and real-time object detection to identify items placed in the cart.
+- **Seamless Checkout:** Bills items directly at the cart, eliminating the need for traditional checkout counters.
+- **Receipt Generation:** Automatically generates a digital receipt for the purchased items.
+- **QR Code Integration:** Provides a QR code for quick and secure checkout.
 
-## Technology Stack
+## Components
 
-- YOLO (You Only Look Once): For real-time object detection
-- Raspberry Pi: As the computing unit attached to the cart
-- Video Streaming: To capture items being added to the cart
-- Python: Primary programming language for integration and processing
+1. **Raspberry Pi:** Acts as the central processing unit for running the YOLO model and managing the video stream.
+2. **YOLO (You Only Look Once):** Real-time object detection algorithm for identifying items in the cart.
+3. **Camera Module:** Captures video footage of the cart's contents for processing by YOLO.
+4. **Receipt Printer (Optional):** Prints a physical receipt if required.
+5. **QR Code Generator:** Creates a QR code that contains checkout information for easy payment processing.
 
-## How It Works
+## Installation and Setup
 
-1. A camera attached to the shopping cart streams video of the cart's contents.
-2. The YOLO algorithm processes the video stream in real-time, identifying items as they're added to the cart.
-3. Each identified item is added to the customer's bill automatically.
-4. When shopping is complete, the customer can check out directly at the cart.
-5. The system generates a digital receipt and a QR code for the transaction.
+1. **Hardware Requirements:**
+   - Raspberry Pi (Model 3B+ or later)
+   - Camera module compatible with Raspberry Pi
+   - Access to a receipt printer (if required)
 
-## Benefits
+2. **Software Requirements:**
+   - Raspberry Pi OS (or any compatible Linux distribution)
+   - YOLO pre-trained model
+   - Python 3.x
+   - OpenCV library
+   - Additional Python libraries for QR code generation and receipt handling
 
-- Reduces checkout times and eliminates queues
-- Enhances shopping experience through convenience
-- Minimizes human error in scanning and billing
-- Provides real-time total cost to shoppers
-- Enables easy integration with digital payment systems
+3. **Installation Steps:**
+   1. **Set up the Raspberry Pi:**
+      - Install Raspberry Pi OS and update it.
+      - Connect the camera module and ensure it's functioning correctly.
 
-## Future Enhancements
+   2. **Install YOLO:**
+      - Follow YOLO installation instructions from [YOLO GitHub repository](https://github.com/AlexeyAB/darknet) or other reliable sources.
+      - Download the pre-trained YOLO weights.
 
-- Integration with inventory management systems
-- Personalized shopping recommendations based on cart contents
-- Expansion to include produce and items sold by weight
-- Mobile app integration for expanded features and easier payment
+   3. **Install Python Dependencies:**
+      ```bash
+      pip install opencv-python
+      pip install qrcode[pil]
+      ```
 
-## Contributors
+   4. **Clone the Project Repository:**
+      ```bash
+      git clone https://github.com/yourusername/smart-checkout-cart.git
+      cd smart-checkout-cart
+      ```
 
-1. **Sahil Jain**
-2. **Yash Gupta**
-3. **Girendra Sinsinwar**
-4. **Gunesh Gupta**
-5. **Jahnvi Sahni**
+   5. **Configure YOLO:**
+      - Place the YOLO weights and configuration files in the appropriate directories.
 
-## Acknowledgments
+   6. **Run the Application:**
+      ```bash
+      python walmartsparkathon.ipnyb
+      ```
 
-We'd like to thank Walmart for organizing the Sparkathon and providing us with this opportunity to innovate in the retail space.
+## Usage
+
+1. **Place Items in Cart:**
+   - As items are added to the cart, the system uses the camera to capture video and YOLO to detect the items.
+
+2. **Automatic Billing:**
+   - The detected items are billed automatically without requiring additional actions from the user.
+
+3. **Checkout and Receipt:**
+   - Upon completing the shopping, the system generates a digital receipt and a QR code.
+   - The QR code can be scanned at a payment terminal for secure checkout.
+
+## Troubleshooting
+
+- **Camera Not Detected:**
+  - Ensure the camera module is properly connected and enabled in the Raspberry Pi settings.
+- **YOLO Errors:**
+  - Verify that the YOLO configuration files and weights are correctly placed and accessible.
+
+## Future Improvements
+
+- **Enhanced Object Recognition:** Implement custom models for better accuracy in detecting specific items.
+- **Integration with Payment Systems:** Develop APIs to integrate with various payment processors for a more seamless checkout experience.
+
+## Contributing
+
+Contributions are welcome! If you have ideas for improvements or bug fixes, please submit a pull request or open an issue on the [GitHub repository](https://github.com/yourusername/smart-checkout-cart).
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Contact
+
+For any questions or further information, please contact:
+
+- [Your Name](mailto:your.email@example.com)
+- [GitHub Profile](https://github.com/yourusername)
+
